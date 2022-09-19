@@ -1,0 +1,94 @@
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+@font-face {
+    font-family: museo-sans;
+    src: url(museo-sans/museo-sans/MuseoSans_500.otf);
+    font-size: 50px;
+}
+/* Imagen de cabecera */
+header{
+    background-image: url("EMV_banner_estadoRed.jpg");
+    width: 100%;
+    min-height: 240px;
+    /*border: 1px solid black;*/  /*Lo comento para ver que pasa con los bordes, última modificación*/
+}
+
+
+
+/* .estadosdelservicio
+{   /*background-image: url("EMV_RESUMEN_disposicion.jpg"); */
+/*    width: 100%;
+    height: 570px;
+    margin: 0px;
+} */
+
+
+
+/*Para cada clase fondo_linea le seteo el alto fijo y ancho variable*/
+.fondo_linea {
+    width: 100%;
+    height: 120px; 
+    margin: 0px;
+}
+
+/*Aplico Fondo para cada linea individualmente*/
+#fondo_lineaA {
+    background: url("fondo_A.jpg");
+}
+#fondo_lineaB {
+    background: url("fondo_B.jpg");
+}
+#fondo_lineaC {
+    background: url("fondo_C.jpg");
+}
+#fondo_lineaD {
+    background: url("fondo_D.jpg");
+}
+#fondo_lineaE {
+    background: url("fondo_E.jpg");
+}
+#fondo_lineaH {
+    background: url("fondo_H.jpg");
+}
+
+
+/*Div que contiene las lineas. Le seteo relative para poder centrar los mensajes */
+.grupo
+{
+    width: 100%;
+    height: 720px;
+    margin: 0px;
+    padding: 0px;
+    /*border: 1px solid black; */ /*Lo comento para ver que pasa con los bordes, última modificación*/
+    position: relative; /* para que los textos dentro de este grupo queden centrados */
+}
+
+/* Clase para manipular todos los mensajes*/
+.mensaje{
+    
+    font-family: museo-sans;
+    margin: 0px;
+    font-size: 48px;
+    
+    /* para que el texto quede centrado y no se desborde cuando el texto viene muy grande*/
+    text-align: left;
+    margin-left: 3%; /*pegado al logo*/
+    position:relative;
+    width: 85%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+/* Imagen de pie de pagina */
+footer{
+    background: url("EMV_footer_ingreso.jpg");
+    margin: 0px;
+    width: 100%;
+    min-height: 120px;
+    /*border: 1px solid black; */ /*Lo comento para ver que pasa con los bordes, última modificación*/
+}
